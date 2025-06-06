@@ -1,6 +1,7 @@
 {
   "name": "student-time-manager",
   "version": "1.0.0",
+  "homepage": "https://WSCC-InstructionalDesign.github.io/student-time-manager",
   "description": "A comprehensive, accessible web application for student time management and weekly schedule planning",
   "keywords": [
     "time management",
@@ -12,7 +13,6 @@
     "WCAG",
     "react"
   ],
-  "homepage": "https://github.com/WSCC-InstructionalDesign/student-time-manager",
   "bugs": {
     "url": "https://github.com/WSCC-InstructionalDesign/student-time-manager/issues"
   },
@@ -37,7 +37,9 @@
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "format": "prettier --write src/**/*.{js,jsx,css,json}",
     "analyze": "npm run build && npx bundle-analyzer build/static/js/*.js",
-    "preview": "serve -s build"
+    "preview": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -59,7 +61,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.8",
     "pa11y-ci": "^3.0.1",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "gh-pages": "^5.0.0"
   },
   "browserslist": {
     "production": [
