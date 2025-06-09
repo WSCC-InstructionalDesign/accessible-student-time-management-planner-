@@ -1,8 +1,8 @@
 {
-  "name": "student-time-manager",
+  "name": "student-weekly-time-management-planner",
   "version": "1.0.0",
   "homepage": "https://WSCC-InstructionalDesign.github.io/student-time-manager",
-  "description": "A comprehensive, accessible web application for student time management and weekly schedule planning",
+  "description": "Student Weekly Time Management Planner - A comprehensive, accessible web application for student time management and weekly schedule planning",
   "keywords": [
     "time management",
     "student planner",
